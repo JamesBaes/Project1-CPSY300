@@ -19,7 +19,7 @@ jobs:
       
       # Python setup
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9'
       
@@ -39,8 +39,7 @@ jobs:
         with: 
           name: analysis-results
           path: |
-            *.png
-            *.csv
+            outputs/**
 
   build-docker-local:
     runs-on: ubuntu-latest
