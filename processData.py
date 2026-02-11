@@ -4,7 +4,6 @@ import seaborn as sns
 import os
 
 # Detect if running in Docker or locally
-
 # Docker will have MPLBACKEND set to 'Agg' (non-interactive)
 IN_DOCKER = os.environ.get('MPLBACKEND') == 'Agg'
 
